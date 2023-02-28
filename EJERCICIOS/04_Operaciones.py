@@ -8,10 +8,22 @@ ejercicios introductorios para uso de variables y ejercicios con operadores.
 """ Dada una cantidad de segundos, realice un algoritmo que los convierta a unidades horas,minutos
 mostrando en pantalla en formato "horas:minutos"  """
 
-print (hola)
+segundos =5792
+
+horas=segundos//3600
+sobrante1=segundos%3600
+minutos=sobrante1//60
+
+print("Al conertir",(segundos),"a horas y minutos obtenemos",(horas),":",(minutos
+                                                                          ))
+
+
+
 
 #==>  EJERCICIO 2 
 """ ¿Qué radio debe tener una esfera, para que su volumen sea el mismo al de un cubo de lado 5 cm? """
+
+
 
 #==>  EJERCICIO 4 
 """ Realice un código, que permita la conversión de millas a km y km a millas """

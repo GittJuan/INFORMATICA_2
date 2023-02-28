@@ -77,12 +77,12 @@ cualquiera = 1234567890
 
 conv1 = float(entero)
 conv2 = int(flotante)
-#conv3 = int(string1)
+conv3 = int(string1)
 conv4 = int(string2)
 conv5 = str(cualquiera)
 
 print("entero a flotante ==> ", conv1)
 print("flotante a entero ==> ", conv2)
-#print("string1 a entero  ==> ", conv3)
+print("string1 a entero  ==> ", conv3)
 print("string2 a entero  ==> ", conv4)
 print("numero a string   ==> ", conv5, type(conv5))
