@@ -14,10 +14,8 @@ horas=segundos//3600
 sobrante1=segundos%3600
 minutos=sobrante1//60
 
-print("Al conertir",(segundos),"a horas y minutos obtenemos",(horas),":",(minutos
+print("Al convertir",(segundos),"a horas y minutos obtenemos",(horas),":",(minutos
                                                                           ))
-
-
 
 
 #==>  EJERCICIO 2 
@@ -28,10 +26,17 @@ print("Al conertir",(segundos),"a horas y minutos obtenemos",(horas),":",(minuto
 #==>  EJERCICIO 4 
 """ Realice un código, que permita la conversión de millas a km y km a millas """
 
+Km=float(input("Digite la cantidad de millas que desea convertir a Km:  " ))
+millas=float(input("Digite la cantidad de Km que desea convertir a millas:  "))
+Km=Km/1.609
+millas=millas*1.609
+print("la cantidad de millas equivalentes son:  ", (Km))
+print("la cantidad de Km equivalaentes son:  ", (millas))
 #==>  EJERCICIO 5 
 """ Dadas las coordenadas P1(5,4,5) y P2(0,10,9).
 Realice un codigo que determine la distancia entre ambos puntos """
-
+p1=
+distancia=
 #==>  EJERCICIO 6 
 """ La calificación de informatica se encuentra en el intervalo [0,5] y se calcula tomando 4 notas, 
 con porcentajes de 15%, 25%, 20% y 40%. Si un estudiante tiene las primeras 3 calificaciones definidas.
