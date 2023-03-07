@@ -1,0 +1,14 @@
+Condicional IF 
+
+Es una de las sentencias masd vasicas en python 
+
+Si una condicion es verdadera, las instrucciones siguientes seran ejecutadas 
+. En caso contratio las condiciones deben ser evaluadas en otros casos 
+
+La sintaxis es la siguiete:
+
+if <condicion> : 
+   <sentencias>
+
+   else:
+ <  sentencias>

@@ -90,10 +90,6 @@ print(list(range(-10, 1)))       #Se puede omitir si el salto es 1
 print("el decimal 512 en binario, octal y hexadecimal es:  ", bin(512), oct(512), hex(512))
 print("el decimal 8 en binario, octal y hexadecimal es: ", bin(8),oct(8),hex(8))
 print("el decimal 128 en binario, octal y hexadecimal es:  ", bin(128), oct(128), hex(128))
-
-
-
-
 """ Crear las siguientes secuencias: 
        a) 1,2,3,4,5,6,...500
        b) 2,4,6,8,10,12...200
@@ -108,3 +104,12 @@ print("el decimal 128 en binario, octal y hexadecimal es:  ", bin(128), oct(128)
                                          flotante 5 decimales,
                                          notación científica 2 decimales, 
 """
+""""""
+
+v=list(1,10,20,10.4,20.05,3)
+
+print("tamaño =>", len(v))
+print("sumar =>", sum(v))
+print("minimo =>", min(v))
+print("ordenar =>", sorted(v))
+print("maximo =>", max(v))
