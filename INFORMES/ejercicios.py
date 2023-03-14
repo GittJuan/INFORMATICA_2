@@ -258,6 +258,65 @@ las claves deben ser los nombres de los estudiantes (en strings)
 y los valores deben ser el dinero total que pagó cada uno al terminar la semana (en flotantes)
 """
 
+matriz_uso = [
+    [1, 1, 1, 1, 1, 1],  # Lunes
+    [1, 0, 0, 1, 0, 0],  # Martes
+    [1, 1, 1, 1, 0, 1],  # Miercoles
+    [1, 0, 1, 0, 1, 0],  # Jueves
+    [0, 1, 0, 0, 1, 0],  # Viernes
+    [1, 1, 1, 0, 0, 1],  # Lunes Retorno
+    [1, 0, 0, 0, 0, 1],  # Martes Retorno
+    [1, 0, 1, 1, 0, 0],  # Miercoles Retorno
+    [0, 1, 1, 0, 1, 1],  # Jueves Retorno
+    [0, 0, 0, 0, 0, 0]   # Viernes Retorno
+]
+
+
+TRAYECTO = 15000
+TRAYECTO_SIN_USAR = 10000
+
+diccionarioPagos = {
+    "Juan": 0,
+    "Camila": 0,
+    "Jose": 0,
+    "Maria": 0,
+    "Esteban": 0,
+    "Angie": 0,
+}
+
+for i in range(len(matriz_uso)):
+    suma_estudiante = 0
+    pago_trayecto = 0
+    for j in range(len(matriz_uso[i])):
+        suma_estudiante += 1 if matriz_uso[i][j] == 1 else 0
+
+    if suma_estudiante == 6:
+        pago_trayecto = TRAYECTO / 6
+        for estudiante in diccionarioPagos:
+            diccionarioPagos[estudiante] += pago_trayecto
+    elif suma_estudiante == 0:
+        pago_trayecto = TRAYECTO_SIN_USAR / 6
+        for estudiante in diccionarioPagos:
+            diccionarioPagos[estudiante] += pago_trayecto
+    else:
+        pago_trayecto = TRAYECTO / suma_estudiante
+
+        if matriz_uso[i][0] == 1:
+            diccionarioPagos["Juan"] += pago_trayecto
+        if matriz_uso[i][1] == 1:
+            diccionarioPagos["Camila"] += pago_trayecto
+        if matriz_uso[i][2] == 1:
+            diccionarioPagos["Jose"] += pago_trayecto
+        if matriz_uso[i][3] == 1:
+            diccionarioPagos["Maria"] += pago_trayecto
+        if matriz_uso[i][4] == 1:
+            diccionarioPagos["Esteban"] += pago_trayecto
+        if matriz_uso[i][5] == 1:
+            diccionarioPagos["Angie"] += pago_trayecto
+
+
+print(diccionarioPagos)
+
 #------------------------ EJERCICIO 5 --------------------------------
 
 """ El salario mensual de un empleado se calcula solo teniendo en cuenta el numero de seguros vendidos,
