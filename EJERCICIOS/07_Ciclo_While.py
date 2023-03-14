@@ -7,6 +7,8 @@ repe=int(0)
 while condicion:
     print("el ciclo se ha repetido", (repe), "Veces")
     repe=repe+1
+    if repe==100:
+        break
 #==> EJERCICIO 2 
 """Realice un ciclo while con un numero secreto. Cada vez que se ejecuta un ciclo, el programa pide
 adivinar el numero, en caso de no ser acertado se debe mostrar un mensaje diciendo: "Estás atrapado". 
@@ -31,6 +33,30 @@ while True:
 #==> EJERCICIO 4 
 """Realice un programa que lea una secuencia de números, y cuente cuántos números son pares y cuántos son impares. 
 El programa termina cuando se ingresa el número cero."""
+# Inicializamos las variables para guardar la cantidad de números pares e impares
+pares = 0
+impares = 0
+
+# Creamos un ciclo while que se ejecuta hasta que se ingresa el número cero
+while True:
+    # Pedimos al usuario que ingrese un número o el número cero
+    entrada = int(input("Ingresa un número o escribe 0 para terminar: "))
+    
+    # Verificamos si la entrada es el número cero
+    if entrada == 0:
+        # Si es el número cero, salimos del ciclo
+        break
+    
+    # Verificamos si el número es par o impar
+    if entrada % 2 == 0:
+        # Si es par, incrementamos el contador de números pares
+        pares += 1
+    else:
+        # Si es impar, incrementamos el contador de números impares
+        impares += 1
+        
+# Mostramos la cantidad de números pares e impares guardar en gitr
+print(f"Se ingresaron {pares} números pares y {impares} números impares.")
 
 #==> Ejercicio 5 
 """Utilizando el ciclo while, imprima las siguientes secuencias de numeros:
