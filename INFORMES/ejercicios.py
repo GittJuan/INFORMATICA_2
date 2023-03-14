@@ -35,7 +35,179 @@ Determine el par de puntos que se encuentran más cercanos.
 Almacene la respuesta en un string llamado parCercano. Ejemplo:
 parCercano = "P2-P3" 
 """
+# Definir los puntos
+P1 = (2, 2, 3)
+P2 = (2, 3, 4)
+P3 = (1, 1, 3)
+P3 = (1, 1, 3)
+P4 = (0.5, 0.5, 2)
+P5 = (1, 2, 1)
+P6 = (1, 0.5, 1)
+P7 = (3, 2, 0.5)
+P8 = (3, 1, 2)
+P9 = (0, 0, 0)
+P10 = (2, 0, 0.5)
 
+# Calcular las distancias entre todos los pares de puntos
+d1 = ((P1[0]-P2[0])**2 + (P1[1]-P2[1])**2 + (P1[2]-P2[2])**2)**0.5
+d2 = ((P1[0]-P3[0])**2 + (P1[1]-P3[1])**2 + (P1[2]-P3[2])**2)**0.5
+d3 = ((P1[0]-P4[0])**2 + (P1[1]-P4[1])**2 + (P1[2]-P4[2])**2)**0.5
+d4 = ((P1[0]-P5[0])**2 + (P1[1]-P5[1])**2 + (P1[2]-P5[2])**2)**0.5
+d5 = ((P1[0]-P6[0])**2 + (P1[1]-P6[1])**2 + (P1[2]-P6[2])**2)**0.5
+d6 = ((P1[0]-P7[0])**2 + (P1[1]-P7[1])**2 + (P1[2]-P7[2])**2)**0.5
+d7 = ((P1[0]-P8[0])**2 + (P1[1]-P8[1])**2 + (P1[2]-P8[2])**2)**0.5
+d8 = ((P1[0]-P9[0])**2 + (P1[1]-P9[1])**2 + (P1[2]-P9[2])**2)**0.5
+d9 = ((P1[0]-P10[0])**2 + (P1[1]-P10[1])**2 + (P1[2]-P10[2])**2)**0.5
+
+
+d10 = ((P2[0]-P3[0])**2 + (P2[1]-P3[1])**2 + (P2[2]-P3[2])**2)**0.5
+d11 = ((P2[0]-P4[0])**2 + (P2[1]-P4[1])**2 + (P2[2]-P4[2])**2)**0.5
+d12 = ((P2[0]-P5[0])**2 + (P2[1]-P5[1])**2 + (P2[2]-P5[2])**2)**0.5
+d13 = ((P2[0]-P6[0])**2 + (P2[1]-P6[1])**2 + (P2[2]-P6[2])**2)**0.5
+d14 = ((P2[0]-P7[0])**2 + (P2[1]-P7[1])**2 + (P2[2]-P7[2])**2)**0.5
+d15 = ((P2[0]-P8[0])**2 + (P2[1]-P8[1])**2 + (P2[2]-P8[2])**2)**0.5
+d16 = ((P2[0]-P9[0])**2 + (P2[1]-P9[1])**2 + (P2[2]-P9[2])**2)**0.5
+d17 = ((P2[0]-P10[0])**2 + (P2[1]-P10[1])**2 + (P2[2]-P10[2])**2)**0.5
+
+
+d18 = ((P3[0]-P4[0])**2 + (P3[1]-P4[1])**2 + (P3[2]-P4[2])**2)**0.5
+d19 = ((P3[0]-P5[0])**2 + (P3[1]-P5[1])**2 + (P3[2]-P5[2])**2)**0.5
+d20 = ((P3[0]-P6[0])**2 + (P3[1]-P6[1])**2 + (P3[2]-P6[2])**2)**0.5
+d21 = ((P3[0]-P7[0])**2 + (P3[1]-P7[1])**2 + (P3[2]-P7[2])**2)**0.5
+d22 = ((P3[0]-P8[0])**2 + (P3[1]-P8[1])**2 + (P3[2]-P8[2])**2)**0.5
+d23 = ((P3[0]-P9[0])**2 + (P3[1]-P9[1])**2 + (P3[2]-P9[2])**2)**0.5
+d24 = ((P3[0]-P10[0])**2 + (P3[1]-P10[1])**2 + (P3[2]-P10[2])**2)**0.5
+
+
+d25 = ((P4[0]-P5[0])**2 + (P4[1]-P5[1])**2 + (P4[2]-P5[2])**2)**0.5
+d26 = ((P4[0]-P6[0])**2 + (P4[1]-P6[1])**2 + (P4[2]-P6[2])**2)**0.5
+d27 = ((P4[0]-P7[0])**2 + (P4[1]-P7[1])**2 + (P4[2]-P7[2])**2)**0.5
+d28 = ((P4[0]-P8[0])**2 + (P4[1]-P8[1])**2 + (P4[2]-P8[2])**2)**0.5
+d29 = ((P4[0]-P9[0])**2 + (P4[1]-P9[1])**2 + (P4[2]-P9[2])**2)**0.5
+d30 = ((P4[0]-P10[0])**2 + (P4[1]-P10[1])**2 + (P4[2]-P10[2])**2)**0.5
+
+
+d31 = ((P5[0]-P6[0])**2 + (P5[1]-P6[1])**2 + (P5[2]-P6[2])**2)**0.5
+d32 = ((P5[0]-P7[0])**2 + (P5[1]-P7[1])**2 + (P5[2]-P7[2])**2)**0.5
+d33 = ((P5[0]-P8[0])**2 + (P5[1]-P8[1])**2 + (P5[2]-P8[2])**2)**0.5
+d34 = ((P5[0]-P9[0])**2 + (P5[1]-P9[1])**2 + (P5[2]-P9[2])**2)**0.5
+d35 = ((P5[0]-P10[0])**2 + (P5[1]-P10[1])**2 + (P5[2]-P10[2])**2)**0.5
+
+
+d36 = ((P6[0]-P7[0])**2 + (P6[1]-P7[1])**2 + (P6[2]-P7[2])**2)**0.5
+d37 = ((P6[0]-P8[0])**2 + (P6[1]-P8[1])**2 + (P6[2]-P8[2])**2)**0.5
+d38 = ((P6[0]-P9[0])**2 + (P6[1]-P9[1])**2 + (P6[2]-P9[2])**2)**0.5
+d39 = ((P6[0]-P10[0])**2 + (P6[1]-P10[1])**2 + (P6[2]-P10[2])**2)**0.5
+
+
+d40 = ((P7[0]-P8[0])**2 + (P8[1]-P8[1])**2 + (P8[2]-P8[2])**2)**0.5
+d41 = ((P7[0]-P9[0])**2 + (P8[1]-P9[1])**2 + (P8[2]-P9[2])**2)**0.5
+d42 = ((P7[0]-P10[0])**2 + (P8[1]-P10[1])**2 + (P8[2]-P10[2])**2)**0.5
+
+
+d43 = ((P8[0]-P9[0])**2 + (P8[1]-P9[1])**2 + (P8[2]-P9[2])**2)**0.5
+d44 = ((P8[0]-P10[0])**2 + (P8[1]-P10[1])**2 + (P8[2]-P10[2])**2)**0.5
+
+
+d45 = ((P9[0]-P10[0])**2 + (P9[1]-P10[1])**2 + (P9[2]-P10[2])**2)**0.5
+
+
+# Encontrar la distancia mínima
+dist_min = min(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30, d31, d32, d33, d34, d35, d36, d37, d38, d39, d40, d41, d42, d43, d44, d45 )
+
+# Encontrar los puntos más cercanos
+if dist_min == d1:
+    parCercano = "P1-P2"
+elif dist_min == d2:
+    parCercano = "P1-P3"
+elif dist_min == d3:
+        parCercano = "P1-P4"
+elif dist_min == d4:
+            parCercano = "P1-P5"
+elif dist_min == d5:
+                parCercano = "P1-P6"
+elif dist_min == d6:
+                    parCercano = "P1-P7"
+elif dist_min == d7:
+                        parCercano = "P1-P8"
+elif dist_min == d8:
+                            parCercano = "P1-P9"
+elif dist_min == d9:
+                                parCercano = "P1-P10"
+elif dist_min == d10:
+                                    parCercano = "P2-P3"
+elif dist_min == d11:
+                                        parCercano = "P2-P4"
+elif dist_min == d12:
+                                    parCercano = "P2-P5"
+elif dist_min == d13:
+                                parCercano = "P2-P6"
+elif dist_min == d14:
+                            parCercano = "P2-P7"
+elif dist_min == d15:
+                        parCercano = "P2-P8"
+elif dist_min == d16:
+                    parCercano = "P2-P9"
+elif dist_min == d17:
+                parCercano = "P2-P10"
+elif dist_min == d18:
+            parCercano = "P3-P4"
+elif dist_min == d19:
+        parCercano = "P3-P5"
+elif dist_min == d20:
+    parCercano = "P3-P6"
+elif dist_min == d21:
+ parCercano = "P3-P7"
+elif dist_min == d22:
+ parCercano = "P3-P8"
+elif dist_min == d23:
+    parCercano = "P3-P9"
+elif dist_min == d24:
+        parCercano = "P3-P10"
+elif dist_min == d25:
+            parCercano = "P4-P5"
+elif dist_min == d26:
+                parCercano = "P4-P6"
+elif dist_min == d27:
+                    parCercano = "P4-P7"
+elif dist_min == d28:
+                        parCercano = "P4-P8"
+elif dist_min == d29:
+                            parCercano = "P4-P9"
+elif dist_min == d30:
+                                parCercano = "P4-P10"
+elif dist_min == d31:
+                                    parCercano = "P5-P6"
+elif dist_min == d32:
+                                        parCercano = "P5-P7"
+elif dist_min == d33:
+                                            parCercano = "P5-P8"
+elif dist_min == d34:
+                                                parCercano = "P5-P9"
+elif dist_min == d35:
+                                            parCercano = "P5-P10"
+elif dist_min == d36:
+                                        parCercano = "P6-P7"
+elif dist_min == d37:
+                                    parCercano = "P6-P8"
+elif dist_min == d38:
+                                parCercano = "P6-P9"
+elif dist_min == d39:
+                            parCercano = "P6-P10"
+elif dist_min == d40:
+                        parCercano = "P7-P8"
+elif dist_min == d41:
+                    parCercano = "P7-P9"
+elif dist_min == d42:
+                parCercano = "P7-P10"
+elif dist_min == d43:
+            parCercano = "P8-P9"
+elif dist_min == d44:
+        parCercano = "P8-P10"
+else:
+    parCercano = "P9-P10"
+
+print(parCercano)
 
 #------------------------ EJERCICIO 3 --------------------------------
 """
@@ -62,6 +234,7 @@ cod      Nombre          Nota1   Nota2  Nota3  Nota4  Nota 5
    Almacene sus resultados en una lista llamada estudiantes, tal como se muestra:
    estudiantes = [Cantidad_que_pierden, Cantidad_que_ganan, Cantidadsib_con_poilidades]
 """
+#inicializamos nuestra lista donde seran almacenadas todas las variables
 
 #------------------------ EJERCICIO 4 --------------------------------
 """ Seis compañeros, contratan un taxi con el objeto de movilizarse juntos a la universidad. 
