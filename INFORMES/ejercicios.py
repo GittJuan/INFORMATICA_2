@@ -110,8 +110,6 @@ d44 = ((P8[0]-P10[0])**2 + (P8[1]-P10[1])**2 + (P8[2]-P10[2])**2)**0.5
 
 
 d45 = ((P9[0]-P10[0])**2 + (P9[1]-P10[1])**2 + (P9[2]-P10[2])**2)**0.5
-
-
 # Encontrar la distancia mínima
 dist_min = min(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30, d31, d32, d33, d34, d35, d36, d37, d38, d39, d40, d41, d42, d43, d44, d45 )
 
@@ -235,7 +233,54 @@ cod      Nombre          Nota1   Nota2  Nota3  Nota4  Nota 5
    estudiantes = [Cantidad_que_pierden, Cantidad_que_ganan, Cantidadsib_con_poilidades]
 """
 #inicializamos nuestra lista donde seran almacenadas todas las variables
+# Definir los datos de los estudiantes
+estudiantes_lista = [['01', 'Miguel Pineda', 1.0, 1.1, 2.3, 1.1, None],
+                     ['02', 'Maria Gonzalez', 3.1, 3.1, 1.2, 3.0, None],
+                     ['03', 'Jose Nuñez', 5.0, 4.0, 2.5, 5.0, None],
+                     ['04', 'Angelica Lozano', 3.1, 1.0, 2.6, 1.0, None],
+                     ['05', 'Camilo Suarez', 3.2, 4.0, 1.1, 3.0, None],
+                     ['06', 'Mariana Rosero', 5.0, 5.0, 5.0, 3.9, None],
+                     ['07', 'Esteban Quesada', 3.4, 4.0, 2.6, 3.2, None],
+                     ['08', 'Julia Quintero', 2.0, 2.2, 2.1, 4.2, None],
+                     ['09', 'Mauricio Lizcano', 3.7, 4.1, 4.7, 4.0, None],
+                     ['10', 'Angie Gomez', 4.1, 4.7, 4.4, 5.0, None],
+                     ['11', 'Camilo Restrepo', 5.0, 5.0, 1.0, 3.2, None],
+                     ['12', 'Mauricio Velazquez', 5.0, 4.2, 2.1, 5.0, None],
+                     ['13', 'Esteban Rodriguez', 3.2, 4.1, 2.2, 3.3, None]
+                     ]
 
+promedios = []
+
+# Calcular la nota final de cada estudiante
+for est in estudiantes_lista:
+    nota5 = 0
+    promedio = est[2] * 0.1 + est[3] * 0.2 + \
+        est[4] * 0.15 + est[5] * 0.2 + 0 * 0.35
+    promedios.append((est[1], promedio),)
+
+# Contar cuántos estudiantes pierden aunque obtengan la mejor nota5
+pierden = 0
+
+
+# Contar cuántos estudiantes ganan aunque obtengan la peor nota5
+ganan = 0
+
+
+# Contar cuántos estudiantes tienen posibilidades de pasar
+posibilidades = 0
+
+for promedio in promedios:
+    print(promedio)
+    if promedio[1] < 1.2:
+        pierden += 1
+    elif promedio[1] > 3:
+        ganan += 1
+    else:
+        posibilidades += 1
+
+estudiantes = [pierden, ganan,posibilidades]
+
+print(estudiantes)
 #------------------------ EJERCICIO 4 --------------------------------
 """ Seis compañeros, contratan un taxi con el objeto de movilizarse juntos a la universidad. 
 El contrato es de lunes a viernes, y deben pagar al taxista $15000 por cada trayecto. 
