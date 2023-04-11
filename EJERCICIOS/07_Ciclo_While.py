@@ -28,7 +28,19 @@ while True:
         # Si no es correcta, mostramos un mensaje de error y continuamos el ciclo
         print("Estás atrapado. Intenta nuevamente.")
 #==> EJERCICIO 3 
-"""Realice un programa, que determine el número mayor para una cantidad indeterminada de numeros. (Utilice el ciclo while)"""
+"""Realice un programa, que determine el número mayor para una cantidad indeterminada de numeros positivos. (Utilice el ciclo while)"""
+mayor=0
+respuesta="si"
+
+while respuesta== "si" :
+    respuesta =input("Desea ingresar un numero: ")
+    if respuesta=="si":
+        numero= int(input("Ingrese el numero: "))
+
+    if numero>= mayor:
+        mayor= numero     
+
+
 
 #==> EJERCICIO 4 
 """Realice un programa que lea una secuencia de números, y cuente cuántos números son pares y cuántos son impares. 
