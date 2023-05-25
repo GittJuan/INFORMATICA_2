@@ -28,8 +28,8 @@ while True:
         # Si no es correcta, mostramos un mensaje de error y continuamos el ciclo
         print("Estás atrapado. Intenta nuevamente.")
 #==> EJERCICIO 3 
-"""Realice un programa, que determine el número mayor para una cantidad indeterminada de numeros positivos. (Utilice el ciclo while)"""
-mayor=0
+"""Realice un programa, que determine el número mayor para una cantidad indeterminada de numeros. (Utilice el ciclo while)"""
+ayor=0
 respuesta="si"
 
 while respuesta== "si" :
@@ -39,8 +39,6 @@ while respuesta== "si" :
 
     if numero>= mayor:
         mayor= numero     
-
-
 
 #==> EJERCICIO 4 
 """Realice un programa que lea una secuencia de números, y cuente cuántos números son pares y cuántos son impares. 
@@ -75,3 +73,31 @@ print(f"Se ingresaron {pares} números pares y {impares} números impares.")
 => 2,4,5,8,10,11,14,16,17,20 ...598, 599
 => 2,4,8,16,32,64,128, .. 1048576
 => 1,1,2,3,5,8, ... 2178309"""
+numero = 2
+while (numero <= 1048576):
+    print(numero, end="-")
+    numero *= 2
+
+print("\nserie fibonacci =>")
+numero1 = 1
+numero2 = 1
+while (numero2 <= 2178309):
+    print(numero2, end="-")
+    numero1, numero2 = numero2, numero1 + numero2
+
+
+
+print("\n\nSerie +2, +1, +3 ==> \n")
+numero = 2
+suma1, suma2, suma3 = 2,1,3
+cont = 0
+
+while numero <= 599:
+    print(numero, end = "-")
+    if cont%3 == 0:
+        numero += suma1
+    elif cont%3 ==1:
+        numero += suma2
+    elif cont%3 == 2:
+        numero += suma3
+    cont += 1 
