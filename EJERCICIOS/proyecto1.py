@@ -1,13 +1,14 @@
 import ee
 import pandas as pd
 import matplotlib.pyplot as plt
+import folium
 from google.oauth2 import service_account
-
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileDownload
 
 # Ruta al archivo JSON de autenticación de Google Earth Engine
 credentials = service_account.Credentials.from_service_account_file(r'C:\Users\RYZEN 3\Desktop\datos.json\luminous-figure-388020-d56e0dc1d8a9.json')
+
 # Inicializar Google Earth Engine con las credenciales
 ee.Initialize(credentials=credentials)
 
@@ -30,6 +31,12 @@ def calculate_deforestation(start_year, end_year):
     deforestation = final_image.subtract(initial_image)
     return deforestation
 
+# Calcular la tasa de deforestación entre 2015 y 2020
+start_year = 2015
+end_year = 2020
+deforestation_rate = calculate_deforestation_rate(start_year, end_year)
+
+
 # Calcular la tasa de deforestación en porcentaje
 def calculate_deforestation_rate(start_year, end_year):
     deforestation = calculate_deforestation(start_year, end_year)
@@ -40,10 +47,7 @@ def calculate_deforestation_rate(start_year, end_year):
         scale=100,
         maxPixels=1e9
     ).values()
-# Ejemplo de uso: calcular la tasa de deforestación entre 2015 y 2020
-start_year = 2015
-end_year = 2020
-deforestation_rate = calculate_deforestation_rate(start_year, end_year)
+
 
 # Exportar la tasa de deforestación a Google Drive
 task = ee.batch.Export.image.toDrive(
@@ -73,7 +77,6 @@ def download_file_from_drive(file_id, file_path):
 # Descargar el archivo de tasa de deforestación desde Google Drive
 file_id = task_id.split(':')[1]
 file_path = r'C:\Users\RYZEN 3\Desktop\mapas.tif'
-  # Ruta donde deseas guardar el archivo descargado
 download_file_from_drive(file_id, file_path)
 
 # Cargar los datos en un DataFrame de pandas
@@ -93,7 +96,6 @@ plt.title('Tasa de Deforestación a lo largo del tiempo')
 plt.grid(True)
 plt.show()
 
-
 # Calcular la media de la tasa de deforestación por año
 mean_deforestation_rate = df.groupby('year')['deforestation_rate'].mean()
 
@@ -110,3 +112,18 @@ plt.ylabel('Media de Deforestación (%)')
 plt.title('Media de Deforestación por Año')
 plt.grid(True)
 plt.show()
+
+# Crear un mapa interactivo con la tasa de deforestación
+m = folium.Map(location=[-0.75, -70.0], zoom_start=7)
+
+# Añadir la tasa de deforestación como capa en el mapa
+folium.raster_layers.ImageOverlay(
+    image=df['deforestation_rate'].values.reshape((df['year'].nunique(), -1)),
+    bounds=[[study_area['coordinates'][0][1], study_area['coordinates'][0][0]],
+            [study_area['coordinates'][2][1], study_area['coordinates'][2][0]]],
+    colormap='YlOrRd',
+    origin='upper'
+).add_to(m)
+
+# Mostrar el mapa interactivo
+m
