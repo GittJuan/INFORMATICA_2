@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "luminous-figure-388020",
+  "private_key_id": "d56e0dc1d8a9761d0746776108e9403b4e74a5f1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0kEbxfgKx9tI1\njYMMy+Z5LPR/iNY1pbq6htnXK0PDPIOxAKq7fB1pK2rOHKzt4uCJPqb7eWPzI4TS\n00qc1Bht6GuAlTpsF5e7DQVMGC0W9IGtAzGICNx4Flh8KRPBGDwXSnb1QmRIXYcw\nQa6f0JJfoRxgYCTO8oKLt2zl2DnASIRMjhlNeCzHwoHYCqhxjWy43yY8JV+lPRxC\nXp4Ie04xFB02oX9z1k2W8QEjfjsBwSm96+CMQVwqg3+2BI3hQsI2e6UAGyrzla0S\nbruSIxbwd7B/VcvuxlaZUG+/UJENC3sXpLbssjbcY04XHTWJsdetuuvJLETIlNg9\npW7gG38tAgMBAAECggEAC2by++v7qpZOBvC1Plkf6DYFCIqxEDkzdfTvC63hPRJ0\ntHg4z9cSGmKR/4sDBpClojURIV80hxWOnSuXkhi4pDQhmcCSrGG/BKJZW8lJC6KM\nD8tcVN1OYszycIC9jRuFK+lZYrp7D7DMSSlUqCXpIF3Rp2pa2LCqurzuBQOm/fPa\n2Hc5BhAg/IULP05Uq4KtvzNxwBV3RcjfjS5IoUeAeShaJ5l/YiwchVU5vL94VQyv\nmKrmxpBiH/R5DLmZnRvJTsiZw/XmsfJSR2KNuf+F3OYhzHch87iiGaG/cEE81lf1\nz+I422hjuznVteK/AzT92VGFH9G6liRTUyEex4ElcQKBgQD8vIqF5mq0hPd6XWbF\nEy7GcrozawrUSZmIrSUDtWMBhSCizoYgVC072rjW0GKQGi6pjOv1KYr6CfBs6znh\nuZAg8HO96D7DAocgfGdcbQvH952j9/OyeYQTd0u0DPf8y3F8pbKK/er44rgUfDa4\nesXYd1UDCMyI5jYxC2GflgMTVQKBgQC25ShR+ElArBLkUm10V9J2huXjGmRpcbab\npu04PpyZNhdWKSgldhuGnqLN8O0lMmtluaT90ktzJfM7TAj5P5TJ4Q2XMxljd2F8\nrP0QvIkLFmuWxptC8WckCGM/hChyoZ4wzqtUQZdTB+RiyfoigDb/Gbwkm/LWpVoj\nuDjd0YHseQKBgQCsblIwItGAUguqf5kDMiBCormpJQnhZkmK915+lj1zJwnqKe9W\nlTe7U3Gylb/5QvO9F/lQbcR07V0MYrw95eWQo5zD33UahVn97wJyC6/zAVybJyss\nBD35LfYHZKW44nCOM1qJ+81Zew1OZKTM3m6nTltA07sAV9h3Q6WaRLXadQKBgEqr\nG977QszIc54LmOwavq3tPQWOzNfPuQGrEMYZqc1TLAvdGarRoUNAmK8DYY4CG56Y\nQCfwJyWHpNncnP1FW/VfkDDeh8r3/jDsXxTqI/kG2j3gL5sQ+07Wrc5MokbKfM7o\nUUJA1Qrs+ezrENftCIb1dr5rfKTtNPPITk8hLa3hAoGBAOhKW6DPDoEgGJ/PkV31\nET1YC9LeakMEhp7vpeZUDlkVkdnA1oG20sJE74h5i24btZmjQkH722aZ+12NpwZg\nqDX+FH+ko5ozIMoRHi8BGWe/eVJ2yx5+jQ+IcsupwSp3zBoRTnAWRX3JYCcbjgqk\nh8IIxVE82j0sL72WIyTvcd9U\n-----END PRIVATE KEY-----\n",
+  "client_email": "adminitracion-para-los-datos-g@luminous-figure-388020.iam.gserviceaccount.com",
+  "client_id": "109175316313355164815",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/adminitracion-para-los-datos-g%40luminous-figure-388020.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
